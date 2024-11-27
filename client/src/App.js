@@ -9,6 +9,8 @@ import Home from "./Pages/home/Home";
 import Login from "./Pages/LoginSignUp/Login";
 import AboutPage from "./Pages/AboutPage";
 import Contectpage from "./Pages//ContactPage";
+import ServicesPage from "./Pages/ServicesPage";
+import UpcomingEvents from "./Pages/UpcomingEvents";
  
  
  
@@ -17,24 +19,20 @@ import Contectpage from "./Pages//ContactPage";
 const App = () => {
   return (
     <Router>
-      
+      <Navbar />
       <div>
-         
         <Routes>
-         
           <Route path="/" element={<SignUp />} />
           <Route path="/login" element={<Login />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contect" element={<Contectpage />} />
           <Route path="/home" element={<Home />} />
           <Route path="/Adddetails" element={<Adddetails />} />
-          
-======= 
+          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/events" element={<UpcomingEvents />} />
+          =======
         </Routes>
-    
       </div>
-
-       
     </Router>
   );
 };
